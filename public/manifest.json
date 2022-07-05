@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+
+  "name": "api list Extensions",
+  "description": "list of api hit by the web page.",
+  "version": "1.0.9",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "List of API's url"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "permissions": ["scripting", "webRequest"],
+  "host_permissions": ["https://*/", "http://*/"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
